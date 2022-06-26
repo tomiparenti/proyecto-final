@@ -1,0 +1,173 @@
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+}
+
+.contenedor{
+    border: 2px solid blue;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header{
+    grid-area: header;
+    background-color: yellow;
+    color: blue;
+}
+
+
+.nav{
+    grid-area: nav;
+    background-color: yellow;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px;
+    align-items: center;
+}
+
+.flex div{
+    border: 2px solid blue;
+    padding: 3px;
+    margin: 3px;
+    text-align: center;
+}
+
+.links-none{
+    text-decoration: none;
+}
+
+.main{
+    grid-area: main;
+    background-color: blue;
+}
+
+.titulo-main{
+   color: yellow;
+   border: 2px solid yellow;
+   margin: 20px 20px 20px 20px;
+}
+
+.proyecto-redactado{
+    color: yellow;
+    font-size: large;
+}
+
+.lili{
+    display: flex;
+    color: yellow;
+    font-size: larger;
+    justify-content: left;
+
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: yellow;
+}
+
+.imagenes-canalla{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.imagenes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    flex-direction: column;
+    max-width: 200px;
+    justify-content: center;
+
+}
+
+.footer{
+    grid-area: footer;
+    background-color: yellow;
+}
+.contenedor{
+    display: grid;
+    gap: 10px;
+    grid-template: 
+    "header" 100px
+    "nav" 50px
+    "main" auto
+    "sidebar" auto
+    "footer" 50px; 
+}
+
+@media (min-width: 600px) {
+    .contenedor {
+        grid-template: 
+    "header nav" 100px
+    "main main" auto
+    "sidebar sidebar" auto
+    "footer footer" 50px /
+    auto 200px; 
+    }
+
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+
+    .proyecto-redactado{
+        font-size: large;
+    }
+
+    .imagenes{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 18px;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 900px) {
+    .contenedor {
+        grid-template: 
+    "header nav" 100px
+    "main main" auto
+    "sidebar sidebar" auto
+    "footer footer" 50px /
+    auto 400px; 
+    }
+
+    .header h1 {
+        padding-left: 210px;
+    }
+
+    .flex{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        margin: 20px;
+        align-items: center;
+    }
+    
+    .flex div{
+        border: 2px solid blue;
+        padding: 3px;
+        margin: 3px;
+        text-align: center;
+    }
+
+    .proyecto-redactado{
+        font-size: x-large;
+    }
+
+    .imagenes{
+        display: flex;
+        margin-top: 18px;
+        flex-direction: row;
+    }
+}
