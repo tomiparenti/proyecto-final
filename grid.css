@@ -89,6 +89,14 @@ body{
 
 }
 
+.imagenes{
+    transition: all 2s;
+}
+
+.imagenes:hover{
+    transform: translate(80%);
+}
+
 .footer{
     grid-area: footer;
     background-color: yellow;
@@ -110,7 +118,7 @@ body{
     "header nav" 100px
     "main main" auto
     "sidebar sidebar" auto
-    "footer footer" 50px /
+    "footer footer" 70px /
     auto 200px; 
     }
 
@@ -130,6 +138,14 @@ body{
         margin-top: 18px;
         flex-direction: column;
     }
+
+    .imagenes{
+        transition: all 2s;
+    }
+    
+    .imagenes:hover{
+        transform: translate(150%);
+    }
 }
 
 @media (min-width: 900px) {
@@ -138,7 +154,7 @@ body{
     "header nav" 100px
     "main main" auto
     "sidebar sidebar" auto
-    "footer footer" 50px /
+    "footer footer" 70px /
     auto 400px; 
     }
 
@@ -169,5 +185,13 @@ body{
         display: flex;
         margin-top: 18px;
         flex-direction: row;
+    }
+
+    .imagenes{
+        transition: all 2s;
+    }
+    
+    .imagenes:hover{
+        transform: translate(150%);
     }
 }
