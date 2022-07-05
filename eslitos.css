@@ -2,27 +2,38 @@ html{
     height: 100%;
 }
 
+@font-face{
+    font-family: FUENTE1;
+    src: url(BebasNeue-Regular.ttf);
+}
+
+
 body{
     min-height: 100%;
+    font-family: FUENTE1;
 }
 
 .contenedor{
-    border: 2px solid blue;
     border-radius: 4px;
-    padding: 10px;
     text-align: center;
 }
 
 .header{
     grid-area: header;
-    background-color: yellow;
-    color: blue;
+    background-color: #16457b;
+    color: #f9df34;
 }
 
+.header h1{
+    display: flex;
+    margin: auto;
+    font-size: 100px;
+    justify-content: center;
+}
 
 .nav{
     grid-area: nav;
-    background-color: yellow;
+    background-color: #16457b;
 }
 
 .flex{
@@ -33,8 +44,8 @@ body{
     align-items: center;
 }
 
-.flex div{
-    border: 2px solid blue;
+.flex div:hover{
+    border: 2px solid #16457b;
     padding: 3px;
     margin: 3px;
     text-align: center;
@@ -42,27 +53,30 @@ body{
 
 .links-none{
     text-decoration: none;
+    color: #f9df34;
 }
+
 
 .main{
     grid-area: main;
-    background-color: blue;
+    background-color: ;
 }
 
 .titulo-main{
-   color: yellow;
-   border: 2px solid yellow;
+   color: #16457b;
+   border: 2px solid #16457b;
    margin: 20px 20px 20px 20px;
 }
 
 .proyecto-redactado{
-    color: yellow;
+    color: #16457b;
     font-size: large;
 }
 
+
 .lili{
     display: flex;
-    color: yellow;
+    color: #16457b;
     font-size: larger;
     justify-content: left;
 
@@ -70,12 +84,13 @@ body{
 
 .sidebar{
     grid-area: sidebar;
-    background-color: yellow;
+    background-color: ;
 }
 
 .imagenes-canalla{
     display: flex;
     justify-content: center;
+    transition: all 2s;
     
 }
 
@@ -99,11 +114,11 @@ body{
 
 .footer{
     grid-area: footer;
-    background-color: yellow;
+    color: #16457b;
 }
+
 .contenedor{
     display: grid;
-    gap: 10px;
     grid-template: 
     "header" 100px
     "nav" 50px
@@ -171,7 +186,7 @@ body{
     }
     
     .flex div{
-        border: 2px solid blue;
+        border: 2px solid #f9df34;
         padding: 3px;
         margin: 3px;
         text-align: center;
