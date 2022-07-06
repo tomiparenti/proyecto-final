@@ -22,6 +22,7 @@ body{
     grid-area: header;
     background-color: #16457b;
     color: #f9df34;
+    color: #ffc107;
 }
 
 .header h1{
